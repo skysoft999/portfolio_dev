@@ -78,3 +78,18 @@ background-color:#000;
   padding-left: 10px;
   padding-top: 10px;
 }
+
+.fullpg {
+	width: 100%;
+	height: 100%;
+}
+
+header, main, body {
+  padding-left: 300px;
+}
+
+@media only screen and (max-width : 992px) {
+  header, body, footer {
+    padding-left: 0;
+  }
+}

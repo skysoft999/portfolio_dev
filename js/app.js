@@ -1,18 +1,19 @@
-document.addEventListener('DOMContentLoaded', function() {
-	var elems = document.querySelectorAll('.slider');
-	var instances = M.Slider.init(elems);
-});
-
-
 
 $(document).ready(function() {
-	$('.sidenav').sidenav().on('click tap', 'li a', () => {
-		$('.sidenav').sidenav('close');
-	});
+	
+	// $('.sidenav').sidenav().on('click tap', 'li a', () => {
+	// 	$('.sidenav').sidenav('close');
+	// });
+	$('.sidenav').sidenav();
 	$('.collapsible').collapsible();
 	$('.tooltipped').tooltip();
 	$('.modal').modal();
 	$('.tabs').tabs();
+	$('.slider').slider({ 
+    	// full_width: true,
+    	// height : 800, // default - height : 400
+    	interval: 8000 // default - interval: 6000
+    });
 
 	// Map Js
 	var map = new ol.Map({
