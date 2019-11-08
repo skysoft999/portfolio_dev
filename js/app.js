@@ -9,7 +9,7 @@ $(document).ready(function() {
 	$('.tabs').tabs();
 	$('.slider').slider({ 
         // full_width: true,
-        // height : 800, // default - height : 400
+        height : 800, // default - height : 400
         interval: 8000 // default - interval: 6000
     });
 
